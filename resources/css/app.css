@@ -10,4 +10,26 @@
   .link {
       @apply block font-medium text-gray-700 underline decoration-pink-500 mb-3
     }
+
+    label{
+        @apply block text-sm font-medium text-gray-700 mb-1
+    }
+    input:not([type="checkbox"]):not([type="radio"]),textarea{
+        @apply w-full px-3 py-2 appearance-none border border-gray-300  leading-tight
+         rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-200 focus:border-transparent
+    }
+    input[type="checkbox"],input[type="radio"]{
+        @apply  appearance-none h-4 w-4 rounded border border-gray-600
+           dark:border-gray-400 bg-white checked:bg-pink-500 p-2
+           checked:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9J25vbmUnIHZpZXdCb3g9JzIgLTUgMjQgMzInIHN0cm9rZS13aWR0aD0nNC41JyBjb2xvcj0nd2hpdGUnIHN0cm9rZT0nY3VycmVudENvbG9yJyA+PHBhdGggZD0nbTQuNSAxMi43NSA2IDYgMTMtMTYuNScgLz48L3N2Zz4=')] bg-no-repeat bg-center focus:ring-1 focus:ring-pink-500
+    }
+    .error{
+        @apply text-red-400 text-sm mt-1
+    }
+    .input-error{
+         @apply border-red-400 focus:ring-1 focus:ring-red-400 focus:border-red-400 !important;
+    }
 }
+
+
+
