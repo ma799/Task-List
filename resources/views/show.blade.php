@@ -3,36 +3,42 @@
 @section('title',$task->title)
 
 @section('content')
-{{ $task->description }}
+<a class="link" href="{{ route('tasks.index') }}">← Back to All Tasks</a>
+<div class="flex flex-col gap-2">
+<p>{{ $task->description }}</p>
 @if($task->long_description)
- <p>{{ $task->long_description }}</p>
+ <p class="text-slate-700"> {{ $task->long_description }}</p>
  @else
     <p>No long description available.</p>
 @endif
-  <p>{{ $task->created_at }}</p>
-  <p>{{ $task->updated_at }}</p>
+  <div class="flex text-slate-500">
+    <p>Created : {{ $task->created_at->diffForHumans() }}</p>&nbsp; • &nbsp;
+    <p>Updated : {{ $task->updated_at->diffForHumans() }}</p>
+  </div>
   @if ($task->completed)
-    <p>Status: Completed</p>
+    <p class="text-slate-700 font-medium">Completed</p>
   @else
-    <p>Status: Pending</p>
+    <p class="text-red-500 font-medium">Pending</p>
   @endif
-      <a href="{{ route( 'tasks.edit', $task) }}">Edit</a>
-     <form method="POST" action="{{ route( 'tasks.destroy', $task) }}">
+ <div class="mt-4 flex gap-2">
+    <a class="btn" href="{{ route( 'tasks.edit', $task) }}">Edit</a>
+    <form method="POST" action="{{ route( 'tasks.destroy', $task) }}">
         @csrf
         @method('DELETE')
-        <button style="background-color:#ff5f5f;border:none" type="submit" class="btn btn-danger">Delete</button>
-      </form>
-          <form method="POST" action="{{ route( 'tasks.toggleCompletion', $task) }}">
-            @csrf
-            @method('PUT')
-            <button style="background-color:rgb(119, 119, 255);border:none" type="submit" class="btn btn-danger">
-               Mark as @if($task->completed)
-                     Pending
-                @else
-                    Completed
-                @endif
-            </button>
-        </form>
-
+        <button  type="submit" class="btn ">Delete</button>
+    </form>
+    <form method="POST" action="{{ route( 'tasks.toggleCompletion', $task) }}">
+    @csrf
+    @method('PUT')
+    <button  type="submit" class="btn ">
+        Mark as @if($task->completed)
+                Pending
+        @else
+            Completed
+        @endif
+    </button>
+    </form>
+ </div>
+</div>
 @endsection
 

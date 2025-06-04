@@ -48,9 +48,7 @@
 <body >
 <section class="max-w-2xl mx-auto">
     @if(session('success'))
-    <div  style=" top: 0; left: 0;
-        width: 100%; background-color: #4caf50; color: white;
-        text-align: center; padding: 5px; z-index: 1000;">
+    <div class="bg-green-500 text-white border-2 border-green-400 text-center p-2" >
             <p>{{ session('success') }}</p>
     </div>
     @endif

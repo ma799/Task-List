@@ -1,10 +1,8 @@
 @extends('layouts.app')
 @section('title',content: 'All Tasks')
 @section('content')
-<h1 class="text-2xl font-medium mb-4 ">
-    List of Tasks
-</h1>
-    <a class="block mb-4 underline decoration-red-600" href="{{ route('tasks.create') }}">Add Task!</a>
+
+    <a class="link" href="{{ route('tasks.create') }}">Add Task!</a>
 
 @forelse ($tasks as $task)
     <div>
