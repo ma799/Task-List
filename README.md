@@ -22,7 +22,7 @@ A minimalist yet powerful Laravel application to create, organize, and track you
 ### ⚙️ Environment Configuration
 
 1. Copy the environment template:
-   
+
    ```bash
    Create file name .env
    cp .env.example to .env
@@ -30,12 +30,14 @@ A minimalist yet powerful Laravel application to create, organize, and track you
 
 🧰 Dependency Installation
 # Install PHP dependencies
- 
-    ```bash
-    composer install
 
+```bash
+  composer install
+      bash```
+      
 # Install JavaScript dependencies
-$ npm install
+  ```bash
+ npm install
 
 🗃️ Database Setup
 
