@@ -1,6 +1,10 @@
 # 📝 TaskFlow: Simple Task Management
 
-![App Screenshot](https://via.placeholder.com/800x500?text=TaskFlow+Dashboard) <!-- Replace with actual screenshot -->
+## App Screenshot
+
+<p align="center">
+  <img src="./screenshots/screenshot.png" alt="Demo" width="600">
+</p>
 
 A minimalist yet powerful Laravel application to create, organize, and track your tasks' progress with elegant animations and intuitive interface.
 
@@ -22,43 +26,56 @@ A minimalist yet powerful Laravel application to create, organize, and track you
 ### ⚙️ Environment Configuration
 
 1. Copy the environment template:
-   ```bash
+
+   
    Create file name .env
    cp .env.example to .env
+   
 
 🧰 Dependency Installation
 # Install PHP dependencies
+
+```bash
 composer install
-
+```
 # Install JavaScript dependencies
-npm install
 
+```cmd
+ npm install
+```
 🗃️ Database Setup
 
 Using Docker (Recommended)
 bash
 
+```bash
 docker compose up 
+```
+
 
 Create a database named task-list
 
 Update your .env with correct credentials
 
 Run migrations:
-bash
+```bash
 php artisan migrate --seed
+```
 
 🚦 Running the Application
 Start the development servers in two separate terminals:
 
 Backend Server:
 
-bash
+```bash
 php artisan serve
+```
+
 Frontend Assets:
 
-bash
+```bash
 npm run dev
+```
 
 🌐 Access the application at: http://localhost:8000
 
@@ -70,6 +87,7 @@ Permission errors	Run chmod -R 775 storage bootstrap/cache
 Missing APP_KEY	Run php artisan key:generate
 
 🌟 Features
+
 ✔️ Beautiful task management interface
 
 ✔️ Smooth animations and transitions
