@@ -1,6 +1,8 @@
 # 📝 TaskFlow: Simple Task Management
 
-![App Screenshot](https://via.placeholder.com/800x500?text=TaskFlow+Dashboard) <!-- Replace with actual screenshot -->
+## App Screenshot
+
+![Alt Text](screenshots/Screenshot 2025-06-05 033036.png)
 
 A minimalist yet powerful Laravel application to create, organize, and track your tasks' progress with elegant animations and intuitive interface.
 
