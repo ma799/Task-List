@@ -37,7 +37,7 @@ composer install
 # Install JavaScript dependencies
 
 ```cmd
-$ npm install
+ npm install
 ```
 🗃️ Database Setup
 
@@ -54,20 +54,24 @@ Create a database named task-list
 Update your .env with correct credentials
 
 Run migrations:
-bash
+```bash
 php artisan migrate --seed
+```
 
 🚦 Running the Application
 Start the development servers in two separate terminals:
 
 Backend Server:
 
-bash
+```bash
 php artisan serve
+```
+
 Frontend Assets:
 
-bash
+```bash
 npm run dev
+```
 
 🌐 Access the application at: http://localhost:8000
 
