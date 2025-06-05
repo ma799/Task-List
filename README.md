@@ -87,6 +87,7 @@ Permission errors	Run chmod -R 775 storage bootstrap/cache
 Missing APP_KEY	Run php artisan key:generate
 
 🌟 Features
+
 ✔️ Beautiful task management interface
 
 ✔️ Smooth animations and transitions
