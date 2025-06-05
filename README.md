@@ -2,7 +2,9 @@
 
 ## App Screenshot
 
-![Alt Text](screenshots/Screenshot 2025-06-05 033036.png)
+<p align="center">
+  <img src="./screenshots/Screenshot 2025-06-05 033036.png" alt="Demo" width="600">
+</p>
 
 A minimalist yet powerful Laravel application to create, organize, and track your tasks' progress with elegant animations and intuitive interface.
 
