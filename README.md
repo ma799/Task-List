@@ -23,28 +23,31 @@ A minimalist yet powerful Laravel application to create, organize, and track you
 
 1. Copy the environment template:
 
-   ```bash
+   
    Create file name .env
    cp .env.example to .env
-   ```
+   
 
 🧰 Dependency Installation
 # Install PHP dependencies
 
-  ```bash
-  composer install
-  ```
+```bash
+composer install
+```
 # Install JavaScript dependencies
-  
- ```cmd
- npm install
- ```
+
+```cmd
+$ npm install
+```
 🗃️ Database Setup
 
 Using Docker (Recommended)
 bash
 
+```bash
 docker compose up 
+```
+
 
 Create a database named task-list
 
